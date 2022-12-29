@@ -1,18 +1,106 @@
 addEventListener(`DOMContentLoaded`,(e) =>{
-//3.	Realizar un programa que pueda sumar dos números leídos por teclado y escribir el resultado.	
+//4.	Realizar un programa de procesos en el que se almacenen 3 números en 3 variables A, B y C. El diagrama debe decidir cual es el mayor y cual es el menor	
 
-let num1 = parseInt(prompt('Digite el primer Numero'));
-let num2 = parseInt(prompt('Digite el Segundo Numero'));
-console.log('El numero uno digitado es '+ num1);
-console.log('El numero dos digitado es '+ num2);
+let a = parseInt(prompt('Digite el primer Numero'));
+let b = parseInt(prompt('Digite el Segundo Numero'));
+let c = parseInt(prompt('Digite el Segundo Numero'));
+console.log('El numero uno digitado es '+ a);
+console.log('El numero dos digitado es '+ b);
+console.log('El numero dos digitado es '+ c);
+let ma;
+let me;
 
-    let resultado = num1 +num2;
+if (a > b && a >c) {
+   ma = document.querySelector('body').innerHTML= `El numero "a" es mayor y vale ${a}`
+  
+}if (b > a && b> c) {
+   ma = document.querySelector('body').innerHTML= `El numero "b" es mayor y vale ${b}`  
+  
+}if (c > a && c > b) {
+   ma = document.querySelector('body').innerHTML= `El numero "c" es mayor y vale ${c}`  
     
-    
-console.log('La suma de los dos numeros es: '+ resultado);
+}if (a < b && a < c) {
+    me = document.querySelector('body').innerHTML= `El numero "a" es menor y vale ${a}` 
+   
+}if (b < a && b < c ) {
+    me = document.querySelector('body').innerHTML= `El numero "b" es menor y vale ${b}`    
+   
+}if (c < a && c < b) {
+    me = document.querySelector('body').innerHTML= `El numero "c" es menor y vale ${c}` 
+  
+}
 
-document.querySelector('body').innerHTML =`<H1>Ejercicio 03</H1><br><h2>Realizar un programa que pueda sumar dos números leídos por teclado y escribir el resultado.</h2>
-<h3>El numero uno digitado es ${num1}, el numero dos digitado es; ${num2}, La suma de los dos numeros es:  ${resultado}</h3>
+
+document.querySelector('body').innerHTML =`<H1>Ejercicio 04</H1><br><h2>4.	Realizar un programa de procesos en el que se almacenen 3 números en 3 variables A, B y C. El diagrama debe decidir cual es el mayor y cual es el menor.</h2><br>
+<h3>El numero a digitado es; ${a},<br> el numero b digitado es; ${b},<br> el numero c digitado es; ${c},<br> El numero mayor entre los tres es = ${ma},<br> el numero menor entre los tes es  = ${me}</h3>
 `;
+
+
+
+
+
+
+// let resultado;
+
+
+// if ( a > b) {
+//    if (a > c) {
+//       console.log ('El primer numero es A ' + a );      
+//    }else {
+//       console.log('El tercer numero es mayor C ' + c);
+//    }   
+// }if (b > c) {
+//    console.log('El numero mayor es B ' + b);
+   
+// } else{
+//    console.log('El numeor mayor es el C '+ c);
+   
+// };
+
+// if ( a > b) {
+//    if (b > c) {
+//       console.log ('El primer numero es C ' + c );      
+//    }elsec{
+//       console.log('El tercer numero es mayor B ' + b);
+//    }   
+// }if (a > c) {
+//    console.log('El numero mayor es C ' + c);
+   
+// } else {
+//    console.log('El numeor mayor es el A '+ a);   
+// }
+
+
+
+
+
+
+// if (A == B && A == B){
+//     console.log("Numero 1, Numero 2 y Numero 3 son iguales! y valen: "+A+".");
+//     } else {
+//        if (A > B){
+//           if (A > C){
+//              console.log("Numero 1 es Mayor y vale: "+ A+".");
+//           }else{
+//                 console.log("Numero 3 es Mayor y vale: "+ C +".");
+//           }
+//        } else{
+//           console.log("Numero 2 es Mayor y vale: "+ B +".");
+//        } 
+//       } 
+      
+      
+         
+         
+
+
+
+
+    
+// console.log('La suma de los dos numeros es: '+ resultado);
+
+// document.querySelector('body').innerHTML =`<H1>Ejercicio 04</H1><br><h2>4.	Realizar un programa de procesos en el que se almacenen 3 números en 3 variables A, B y C. El diagrama debe decidir cual es el mayor y cual es el menor.</h2>
+// <h3>El numero uno digitado es $ A}, el numero dos digitado es; ${B}, La suma de los dos numeros es:  ${resultado}</h3>
+// `;
 
 })
