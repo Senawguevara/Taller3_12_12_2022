@@ -1,16 +1,19 @@
 addEventListener(`DOMContentLoaded`,(e) =>{
-alert(`7.	Dados dos números enteros positivos N y D, se dice que D es un divisor de N si el resto de dividir N entre D es 0. Se dice que un número N es perfecto si la suma de sus divisores (excluido el propio N) es N. Por ejemplo 28 es perfecto, pues sus divisores (excluido elv28) son: 1, 2, 4, 7 y 14 y su suma es 1+2+4+7+14=28. Hacer un organigrama que dado un número N nos diga si es o no perfecto.`);
+alert(`2.	Realice un programa que calcule el máximo de N números leídos desde teclado`);
 
-let suma=0
-let N= Number(prompt("Dame un numero")); 
-for(let i = 1; i < N ;i++){
-   if(N%i==0){
-      suma=suma+i   
-      }
-  }
-  if(suma==N)  {
-  document.querySelector("body").innerHTML = " es un numero perfecto"
-      } else   {
-  document.querySelector("body").innerHTML =" no es un numero perfecto"
-      }
+    
+    //Realice un programa que calcule el máximo de N números leídos desde teclado.
+    let c_numeros = Number(prompt("Cantidad de numeros a leer"));
+    let numero_mayor=0
+    
+    for (let i = 0; i < c_numeros; i++) {
+        let num = Number(prompt("Dame un numero")); 
+        if(i==1){
+            numero_mayor=num
+        } else if(num > numero_mayor){
+            numero_mayor=num
+        
+        }
+    }
+    document.querySelector("body").innerHTML = "el numero mayor es: "+numero_mayor
     })
