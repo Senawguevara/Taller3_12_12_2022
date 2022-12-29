@@ -1,42 +1,14 @@
 addEventListener(`DOMContentLoaded`,(e) =>{
-//4.	Realizar un programa de procesos en el que se almacenen 3 números en 3 variables A, B y C. El diagrama debe decidir cual es el mayor y cual es el menor	
+//5.	Realizar un programa que permita escribir los 100 primeros pares	
 
-let a = parseInt(prompt('Digite el primer Numero'));
-let b = parseInt(prompt('Digite el Segundo Numero'));
-let c = parseInt(prompt('Digite el Segundo Numero'));
-console.log('El numero uno digitado es '+ a);
-console.log('El numero dos digitado es '+ b);
-console.log('El numero dos digitado es '+ c);
-let ma;
-let me;
+document.querySelector('body').innerHTML=`5.	Realizar un programa que permita escribir los 100 primeros pares<br>Favor abrir las herramientas de desarrollo para ver el resultado `;
+let n = 100;
 
-if (a > b && a >c) {
-   ma = document.querySelector('body').innerHTML= `El numero "a" es mayor y vale ${a}`
-  
-}if (b > a && b> c) {
-   ma = document.querySelector('body').innerHTML= `El numero "b" es mayor y vale ${b}`  
-  
-}if (c > a && c > b) {
-   ma = document.querySelector('body').innerHTML= `El numero "c" es mayor y vale ${c}`  
-    
-}if (a < b && a < c) {
-    me = document.querySelector('body').innerHTML= `El numero "a" es menor y vale ${a}` 
-   
-}if (b < a && b < c ) {
-    me = document.querySelector('body').innerHTML= `El numero "b" es menor y vale ${b}`    
-   
-}if (c < a && c < b) {
-    me = document.querySelector('body').innerHTML= `El numero "c" es menor y vale ${c}` 
-  
+for (i = 1; i <= n; i++) {
+    if (i % 2 == 0) {
+       console.log(i+" "); 
+    }
 }
-
-
-document.querySelector('body').innerHTML =`<H1>Ejercicio 04</H1><br><h2>4.	Realizar un programa de procesos en el que se almacenen 3 números en 3 variables A, B y C. El diagrama debe decidir cual es el mayor y cual es el menor.</h2><br>
-<h3>El numero a digitado es; ${a},<br> el numero b digitado es; ${b},<br> el numero c digitado es; ${c},<br> El numero mayor entre los tres es = ${ma},<br> el numero menor entre los tes es  = ${me}</h3>
-`;
-
-
-
 
 
 
